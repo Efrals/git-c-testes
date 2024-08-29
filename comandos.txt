@@ -1,0 +1,20 @@
+clear = limpa a tela
+
+cd = muda diretório
+
+ls = lista arquivos e pastas
+
+ls -al = lista arquivos e pastas ocultos 
+
+git add <file> = adidiona o arquivo ao repositório em caso de commit
+
+git status = visualiza o status dos arquivos commitados ou não
+
+git rm --cached <file> = remove arquivos do index
+
+git commit -m "mensagem" = armazena o conteúdo atual do index ao novo commit do repositório junto com a mensagem do usuário descrevendo as alterações realizadas
+
+git log <file> = possibilita visualizar o histórico dos commits por arquivo
+
+git log = possibilita visualizar o histórico dos commits de todos arquivos
+
