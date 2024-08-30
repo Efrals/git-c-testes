@@ -18,11 +18,14 @@ git clone LINK_REPOSITÓRIO = clona de todo repositório
 
 git clone LINK_REPOSITÓRIO . = clona arquivos do repositório em pastas existentes 
 
+git branch -M NOME DA BRANCH = Cria ou ronomea uma branch
+
 git rm --cached <file> = remove arquivos do index
 
 git log <file> = possibilita visualizar o histórico dos commits por arquivo
 
 git log = possibilita visualizar o histórico dos commits de todos arquivos
+
 
 
 ls -al ~/.ssh = mostra se as chaves SSH existentes estão presentes
