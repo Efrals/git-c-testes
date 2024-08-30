@@ -18,7 +18,28 @@ git clone LINK_REPOSITÓRIO = clona de todo repositório
 
 git clone LINK_REPOSITÓRIO . = clona arquivos do repositório em pastas existentes 
 
-git branch -M NOME DA BRANCH = Cria ou ronomea uma branch
+git push = sobe arquivos para o repositório remoto
+
+git branch -M NOME_DA_BRANCH = Cria ou renomeia uma branch (-M indica master)
+
+git branch = Mostra as branches criadas
+
+git checkout NOME_DA_BRANCH = Troca de branch
+
+git checkout -b NOME_DA_BRANCH = Cria uma nova branch e troca para ela
+
+git branch -d NOME_DA_BRANCH = Deleta uma branch (-d indica DELETAR)
+
+git merge NOME_DA_BRANCH_A_SER_MESCLADA = Mescla código (Se estiver na branch main, os recursos da outra branch virão para a main)
+
+
+CRIAR REPOSITÓRIO VAZIO
+git branch -M NOME_DA_BRANCH = Cria ou ronomea uma branch
+
+git remote add origin CHAVE_HTTPS_OU_SSH = seleciona o repositório remoto a ser usado
+
+git push -u origin BRANCH_A_SER_USADA = sobe arquivos da máquina para o repositório remoto
+
 
 git rm --cached <file> = remove arquivos do index
 
