@@ -56,5 +56,3 @@ ssh-keygen -t ed25519 -C "seu e-mail do repositório" = gerar chave SSH em githu
 crtl + u = para apagar a senha digitada
 
 clip < ~/.ssh/id_ed25519.pub
-
-gffdfgh
