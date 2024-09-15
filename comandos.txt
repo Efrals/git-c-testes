@@ -1,3 +1,6 @@
+Dica:
+Sempre dar um git pull ou git merge para puxar as alterações mais atualizadas do projeto
+
 clear = limpa a tela
 
 cd = muda diretório
@@ -8,7 +11,7 @@ ls = lista arquivos e pastas
 
 ls -al = lista arquivos e pastas ocultos
 
-git add <file> = adidiona o arquivo ao repositório em caso de commit
+git add NOME_DO_ARQUIVO = adidiona o arquivo ao repositório em caso de commit
 
 git add . = adidiona todos arquivos ao repositório em caso de commit
 
@@ -62,11 +65,48 @@ git diff NOME_DO_ARQUIVO = mostra diferenças feitas em um arquivo específico
 
 git diff DIGITOS_ÚNICOS_DO COMMIT DIGITOS_ÚNICOS_DO COMMIT = mostra diferenças entre dois commits
 
-git reset = (RECOMENDADO SOMENTE EM BRANCH PRIVADA) reseta tudo na branch privada (commits alterados, não commitados e TODOS arquivos criados)
-
 git reset HEAD = descarta alterações de commits pendentes, tendo de adicionar por git add novamente
 
 git reset NOME_DO_ARQUIVO = tira o arquivos do rastreamento Git
+
+git reset --soft COMMIT = reseta alterações para um commit especificado, mantendo os arquivos em estado Staging
+
+git reset --mixed COMMIT = padrão, não precisa colocar o --mixed. reseta alterações para um commit especificado, mantendo o arquivo no repositório
+
+git reset --hard COMMIT = reseta alterações para um commit especificado, removendo definitivamente do commit indicado para frente (NÃO SEGURO)
+
+
+AVANÇADOS:
+git stash = salva as modificações feitas em um "rascunho local"
+
+git stash push -m "MENSAGEM" = salva as modificações com descrição
+
+git stash list = lista stashs salvas (0 é o mais atual seguindo para as stashs anteriores))
+
+git stash show -p NUMERO_DA_STASH = exibe o que foi modificado na stash selecionadsa
+
+git stash apply NUMERO_DA_STASH = recupera uma stash indicada
+
+git stash drop NUMERO_DA_STASH = remove uma stash indicada
+
+git stash clear = remove TODAS stashs
+
+git tag -a NOME_DA_TAG -m "DESCRIÇÃO" = cria uma tag que agrupa alterações
+
+git tag -d NOME_DA_TAG = remove a tag
+
+git show NOME_DA_TAG = exibe detalhes de alterações na tag
+
+git checkuot NOME_DA_TAG = vai para o grupo onde a tag aponta
+
+git push origin NOME_DA_TAG = envia alterações relativas a uma tag para o repositório
+
+git push origin --tags = envia as alterações relativas a todas as tags para o repositório
+
+git fetch -a = atualiza todas as branches e tags do repositório remoto para a máquina local
+                *para visualizar tem de um git checkout
+
+git rebase NOME_DA_BRANCH_A_SER_MESCLADA = traz e reorganiza a branch selecionada para que posso fazer merge posteriormente (NÃO RECOMENDADO para repositórios públicos)
 
 
 CRIAR REPOSITÓRIO VAZIO
@@ -85,3 +125,7 @@ crtl + u = para apagar a senha digitada
 
 clip < ~/.ssh/id_ed25519.pub
 
+
+Dica Git Bash:
+
+Para colar algo já escrito, pode-se somente selecionar o que deseja escrever e clicar com o Scroll
